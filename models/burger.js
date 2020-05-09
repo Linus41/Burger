@@ -9,13 +9,14 @@ var burger = {
   },
   
   insertOne: function(cols, vals, cb) {
-    orm.insertOne("burger", cols, vals, function(res) {
+    orm.insertOne("burgers", cols, vals, function(res) {
       cb(res);
     });
   },
-  updateOne: function (objColVals, condition, cb) {
-    orm.updateOne("burger", objColVals, condition, function(res) {
-      cb(res);
+  
+  updateOne: function (condition, cb) {
+    orm.updateOne("burgers", "devoured", condition, function(res) {
+      // this is the model that talks to the DB so could this be where db gets devour update? or is that the controller?
     });
   }
 };
