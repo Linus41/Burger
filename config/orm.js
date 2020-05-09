@@ -24,13 +24,13 @@ var orm = {
     },
     // this isn't actually changing 0 to 1 in the devoured column
     updateOne: function(table, cols, vals, cb) {
-        var queryString = "UPDATE ?? SET "+ cols +"=true WHERE ?";
-        console.log("update", table, cols, vals);
-        connection.query(queryString, [table, vals], function(err, result) {
+        var queryString = "UPDATE ?? SET "+ cols +"=true WHERE " + condition;
+          var query = connection.query(queryString, [table, vals], function(err, result) {
           if (err) {
             throw err;
           }
           cb(result);
+          console.log(query);
         });
       },
 };

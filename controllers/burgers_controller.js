@@ -36,11 +36,12 @@ router.put("/api/burger/:id", function (req, res) {
   burger.updateOne({
     devoured: req.body.devoured
   }, condition, function (result) {
-    if(devoured === 1) {
+    if(devoured = 1) {
       result = $(".devoured").text(req.body.burger_name);
        
-    }
     
+    } 
+  
   });
 });
 
