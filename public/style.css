@@ -73,7 +73,7 @@ li {
     animation: glow 1s ease-in-out infinite alternate;
 }
 
-.devoured, .change-devour {
+.devoured, .change-devour, #instructions {
     font-size: 18px;
     color: #fff;
     text-align: center;
