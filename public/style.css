@@ -3,6 +3,7 @@ h1 {
     text-align: center;
     height: 150px;
     padding: 40px;
+    border: solid gray 5px;
 }
 
 #burger-image {
@@ -13,7 +14,6 @@ h1 {
 
 .container-fluid {
     width: 75%;
-
 }
 
 #submit {
@@ -32,6 +32,8 @@ h1 {
 #instructions {
     text-align: center;
     margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(235, 174, 184)
 }
 body {
     height: 800px;
@@ -41,7 +43,7 @@ body {
 
 .devoured, .change-devour {
     background-color: #ff2000;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 li {
@@ -50,7 +52,6 @@ li {
 
 #left {
     text-align: right;
-    /* padding: 20px; */
 }
 
 #right {
@@ -59,6 +60,8 @@ li {
 
 .left {
     text-align: left;
+    background-color: rgb(235, 174, 184);
+    color: black;
 }
 
 #glow {
@@ -69,7 +72,6 @@ li {
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
 }
-
 
 .devoured, .change-devour {
     font-size: 18px;
