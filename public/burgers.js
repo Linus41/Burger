@@ -2,13 +2,14 @@
 $(function () {
   //changes devoured from false to true
   $(".change-devour").on("click", function () {
-    event.preventDefault();
+    
 
     var id = $(this).data("id");
     // var newDevour = $(this).data("newdevour");
     var newDevourState = {
       devoured: 1
     };
+    location.reload();
 
     // Send the PUT request.
     $.ajax("/api/burger/" + id, {

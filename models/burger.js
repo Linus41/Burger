@@ -14,8 +14,8 @@ var burger = {
     });
   },
   
-  updateOne: function (condition, cb) {
-    orm.updateOne("burgers", "devoured", condition, function(res) {
+  updateOne: function (column, value, condition, cb) {
+    orm.updateOne("burgers", column, value, condition, function(res) {
       // this is the model that talks to the DB so could this be where db gets devour update? or is that the controller?
     });
   }

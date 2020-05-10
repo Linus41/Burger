@@ -33,9 +33,7 @@ router.put("/api/burger/:id", function (req, res) {
 
   console.log("condition", condition, req.body.devoured);
 
-  burger.updateOne({
-    devoured: req.body.devoured
-  }, condition, function (result) {
+  burger.updateOne("devoured", req.body.devoured, condition, function (result) {
     if(devoured = 1) {
       result = $(".devoured").text(req.body.burger_name);
        
