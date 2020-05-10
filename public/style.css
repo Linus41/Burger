@@ -1,3 +1,11 @@
 h1 {
-    background-color: greenyellow;
+    background-color: rgb(255, 130, 47);
+    text-align: center;
+    height: 150px;
+    padding: 40px;
+}
+
+burger-image {
+    height: 50px;
+    width: 50px;
 }
