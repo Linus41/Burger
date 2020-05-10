@@ -1,10 +1,15 @@
 {{!-- font from https://fontmeme.com/ --}}
 <h1><a href="https://fontmeme.com/whataburger-logo-font/"><img
-      src="https://fontmeme.com/permalink/200510/018a134f2ac87b3fd12fc8b7b47de8b2.png" alt="whataburger-logo-font"
+      src="https://fontmeme.com/permalink/200510/acd65effe7920a929991c827306771dc.png" alt="whataburger-logo-font"
       border="0"></a></h1>
-<container>
-  <div class=row>
-    <div class=col-4-md>
+<div class="container-fluid">
+  <div class="row">
+    <div id="instructions" class="col">
+      Welcome! Please enter a burger you'd like to eat, then click "DEVOUR to save to your Burger History"
+    </div>
+  </div>
+  <div class="row">
+    <div id="left" class="col-sm">
       <ul>
         {{#each burger}}
         {{#unless devoured}}
@@ -14,21 +19,24 @@
       </ul>
     </div>
 
-    <div class=col-4-md>
-      <img id=burger-image src="/burger.png">
+    <div class="col-sm">
+      <img class="img-fluid" id="burger-image" src="/burger.png">
+      <br><br><br>
       <form class="create-form">
 
         <div class="form-group">
 
-          <label for="ca">What Kind of Burger do you Want?:</label>
+          <label id="glow" for="ca">What Kind of Burger do you Want?</label><br><br>
           <input type="text" id="ca" name="burger_name">
         </div>
+        <br>
         <button id="submit" type="submit">Add Burger</button>
 
       </form>
+      <br><br>
     </div>
 
-    <div class=col-4-md>
+    <div id="right" class="col-sm">
       <ul>
         {{#each burger}}
         {{#if devoured}}
@@ -38,4 +46,4 @@
       </ul>
     </div>
   </div>
-</container>
+  </container>

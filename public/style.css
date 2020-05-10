@@ -1,11 +1,91 @@
 h1 {
-    background-color: rgb(255, 130, 47);
+    background-color: rgb(233, 187, 127);
     text-align: center;
     height: 150px;
     padding: 40px;
 }
 
-burger-image {
-    height: 50px;
-    width: 50px;
+#burger-image {
+    width: 100%;
+    border: solid #ff2000 2px;
+    border-radius: 24%;
+}
+
+.container-fluid {
+    width: 75%;
+
+}
+
+#submit {
+    background-color: green;
+}
+
+.col-sm {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.create-form {
+    text-align: center;
+}
+
+#instructions {
+    text-align: center;
+    margin-top: 10px;
+}
+body {
+    height: 800px;
+    background: black;
+    color: white;
+}
+
+.devoured, .change-devour {
+    background-color: #ff2000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+#left {
+    text-align: right;
+    /* padding: 20px; */
+}
+
+#right {
+    text-align: left;
+}
+
+.left {
+    text-align: left;
+}
+
+#glow {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+.devoured, .change-devour {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff2000, 0 0 40px #ff2000, 0 0 50px #ff2000, 0 0 60px #ff2000, 0 0 70px #ff2000;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff2000, 0 0 40px #ff2000, 0 0 50px #ff2000, 0 0 60px #ff2000, 0 0 70px #ff2000, 0 0 80px #ff2000;
+    }
 }
